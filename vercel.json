@@ -1,7 +1,0 @@
-{
-  "name": "test-vercel-api",
-  "version": 2,
-  "env": {
-    "MONGODB_URI": process.env.MONGODB_URI
-  }
-}
