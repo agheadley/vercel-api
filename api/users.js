@@ -7,7 +7,7 @@ module.exports = (req, res) => {
       { useNewUrlParser: true, useUnifiedTopology: true },
       () => console.log("connected")
     );
-    res.send("connected");
+    res.send("connected" + process.env.MONGODB_URI);
   } catch (error) {
     console.log("could not connect via mongoose");
     res.send("error in connection");
