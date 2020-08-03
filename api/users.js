@@ -1,4 +1,4 @@
-//import { MongoClient } from "mongodb";
+import { MongoClient } from "mongodb";
 
 /*
 module.exports = (req, res) => {
@@ -7,7 +7,7 @@ module.exports = (req, res) => {
 */
 
 module.exports = (req, res) => {
-  mongodb.MongoClient.connect(process.env.MONGODB_URI, function(err, db) {
+  MongoClient.connect(process.env.MONGODB_URI, function(err, db) {
     if (err) res.send("error with mongoclient");
     res.send("Database connected");
     db.close();
