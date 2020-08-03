@@ -1,6 +1,11 @@
 const mongoose = require("mongoose");
 
 module.exports = (req, res) => {
+  res.send("***" + process.env.MONGODB_URI + process.env.VERCEL_URL);
+};
+
+/*
+module.exports = (req, res) => {
   try {
     mongoose.connect(
       process.env.MONGODB_URI,
@@ -13,3 +18,5 @@ module.exports = (req, res) => {
     res.send("error in connection");
   }
 };
+
+*/
