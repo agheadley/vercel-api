@@ -1,6 +1,4 @@
-//const mongoose = require("mongoose");
-
-import mongoose from "mongoose";
+import { MongoClient } from "mongodb";
 module.exports = (req, res) => {
   res.send("***" + process.env.VERCEL_URL);
 };
