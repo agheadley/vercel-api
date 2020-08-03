@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+//const mongoose = require("mongoose");
 
 module.exports = (req, res) => {
   res.send("***" + process.env.MONGODB_URI + process.env.VERCEL_URL);
