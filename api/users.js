@@ -1,7 +1,5 @@
 import { MongoClient } from "mongodb";
 
-/*
-
 module.exports = (req, res) => {
   MongoClient.connect(process.env.MONGODB_URI, function(err, db) {
     if (err) res.send("error with mongoclient");
@@ -10,7 +8,7 @@ module.exports = (req, res) => {
   });
 };
 
-*/
+/*
 
 module.exports = (req, res) => {
   MongoClient.connect(process.env.MONGODB_URI, function(err, db) {
@@ -23,3 +21,5 @@ module.exports = (req, res) => {
     });
   });
 };
+
+*/
