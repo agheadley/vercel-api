@@ -6,6 +6,8 @@
         <p>Testing API</p>
         <v-btn @click="test">API \test</v-btn>
         <v-btn @click="users">API \users</v-btn>
+         <v-btn @click="mongo1">API \mongo1</v-btn>
+       
         <p>{{message}}</p>
       </v-card-text>
     </v-card>
@@ -23,6 +25,19 @@ export default {
   methods: {
     test() {
       fetch('/api/test?name="worldy"')
+        .then(function(response) {
+          return response.text();
+        })
+        .then(function(text) {
+          console.log("Request successful", text);
+          //this.message = text;
+        })
+        .catch(function(error) {
+          console.log("Request failed", error);
+        });
+    },
+     mongo1() {
+      fetch('/api/mongo1')
         .then(function(response) {
           return response.text();
         })
